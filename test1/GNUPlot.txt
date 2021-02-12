@@ -1,0 +1,8 @@
+delta_v(x) = ( vD = x - old_v, old_v = x, vD)
+old_v = NaN
+set title "Compute Deltas"
+set style data lines
+set yrange [0:40]
+set xrange [0:600]
+
+plot 'timestamps.txt'  using 0:(delta_v($1)) title 'Delta'
