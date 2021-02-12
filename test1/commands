@@ -1,5 +1,5 @@
 rpi hq camera connected to rpi 3B+
 
-raspivid -w 1280 -h 720 -fps 120 -t 0 -pts ts1280x720x120.txt
+raspivid -w 1280 -h 720 -fps 120 -t 0 -pts ts1280x720x120.txt -o tmp.h264
 
-raspivid -w 1920 -h 1080 -fps 50 -t 0 -pts ts1920x1080x50.txt
+raspivid -w 1920 -h 1080 -fps 50 -t 0 -pts ts1920x1080x50.txt -o tmp.h264
