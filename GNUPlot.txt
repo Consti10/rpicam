@@ -6,3 +6,7 @@ set yrange [0:40]
 set xrange [0:600]
 
 plot 'timestamps.txt'  using 0:(delta_v($1)) title 'Delta'
+
+plot 'ts1280x720x120.txt'  using 0:(delta_v($1)) title 'Delta 1280x720x120'
+
+plot 'ts1920x1080x50.txt'  using 0:(delta_v($1)) title 'Delta 1920x1080x60'
