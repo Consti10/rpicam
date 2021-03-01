@@ -8,3 +8,7 @@ vcgencmd measure_clock h264
 
 
 cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+
+
+MP4Box -add tmp.h264 -fps 120 tmp.mp4
+MP4Box -add tmp2.h264 -fps 50 tmp2.mp4
